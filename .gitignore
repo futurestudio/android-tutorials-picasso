@@ -1,3 +1,10 @@
+# Android Studio specifics
+local.properties
+.idea
+workspace.xml
+*.iml
+.DS_Store
+
 # Built application files
 *.apk
 *.ap_

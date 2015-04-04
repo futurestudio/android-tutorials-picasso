@@ -1,4 +1,4 @@
-package io.futurestud.tutorials.picasso;
+package io.futurestud.tutorials.picasso.ui.fragments;
 
 import android.app.Activity;
 import android.os.Bundle;

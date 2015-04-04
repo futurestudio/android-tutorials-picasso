@@ -1,10 +1,13 @@
-package io.futurestud.tutorials.picasso;
+package io.futurestud.tutorials.picasso.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
+
+import io.futurestud.tutorials.picasso.R;
+import io.futurestud.tutorials.picasso.ui.fragments.UsageExampleDetailFragment;
 
 
 /**

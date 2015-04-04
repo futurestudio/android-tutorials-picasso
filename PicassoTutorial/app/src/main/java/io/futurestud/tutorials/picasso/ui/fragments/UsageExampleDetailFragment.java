@@ -1,4 +1,4 @@
-package io.futurestud.tutorials.picasso;
+package io.futurestud.tutorials.picasso.ui.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,7 +8,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
+import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.dummy.DummyContent;
+import io.futurestud.tutorials.picasso.ui.activities.UsageExampleDetailActivity;
+import io.futurestud.tutorials.picasso.ui.activities.UsageExampleListActivity;
 
 /**
  * A fragment representing a single UsageExample detail screen.
@@ -54,7 +57,7 @@ public class UsageExampleDetailFragment extends Fragment {
 
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.usageexample_detail)).setText(mItem.content);
+            ((TextView) rootView.findViewById(R.id.usageexample_detail)).setText("Todo: " + mItem.content);
         }
 
         return rootView;

@@ -45,6 +45,10 @@ public class MainActivity extends ListActivity {
                 showExampleActivity(UsageExampleImageResizing.class);
                 break;
 
+            case 4:
+                showExampleActivity(UsageExampleRequestPriority.class);
+                break;
+
             default:
 
         }

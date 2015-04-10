@@ -38,6 +38,11 @@
             android:name=".ui.activities.UsageExampleImageResizing"
             android:label="Image Manipulation"/>
 
+        <activity
+            android:name=".ui.activities.UsageExampleRequestPriority"
+            android:label="Request Priority"/>
+
+
     </application>
 
 </manifest>

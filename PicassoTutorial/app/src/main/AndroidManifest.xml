@@ -23,17 +23,20 @@
         </activity>
 
         <activity
+            android:name=".ui.activities.UsageExampleSimpleLoading"
+            android:label="Simple Loading"/>
+
+        <activity
             android:name=".ui.activities.UsageExampleAdapter"
             android:label="Adapter Example"/>
 
         <activity
-            android:name=".ui.activities.UsageExampleSimpleLoading"
-            android:label="Simple Loading Example"/>
+            android:name=".ui.activities.UsageExamplePlaceholdersAndErrors"
+            android:label="Placeholders"/>
 
         <activity
-            android:name=".ui.activities.UsageExamplePlaceholdersAndErrors"
-            android:label="Placeholders Example"/>
-
+            android:name=".ui.activities.UsageExampleImageResizing"
+            android:label="Image Manipulation"/>
 
     </application>
 

@@ -41,6 +41,10 @@ public class MainActivity extends ListActivity {
                 showExampleActivity(UsageExamplePlaceholdersAndErrors.class);
                 break;
 
+            case 3:
+                showExampleActivity(UsageExampleImageResizing.class);
+                break;
+
             default:
 
         }

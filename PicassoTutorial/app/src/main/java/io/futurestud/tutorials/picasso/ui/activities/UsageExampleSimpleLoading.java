@@ -25,6 +25,8 @@ public class UsageExampleSimpleLoading extends ActionBarActivity {
     @InjectView(R.id.simple_loading_file) ImageView imageViewFile;
     @InjectView(R.id.simple_loading_uri) ImageView imageViewUri;
 
+    private Context context = this;
+
     /**
      * helper method which creates an Uri for a resourceId
      */
@@ -49,7 +51,7 @@ public class UsageExampleSimpleLoading extends ActionBarActivity {
         // the url could be any image URL, which is accessible with a normal HTTP GET request
         String internetUrl = "http://i.imgur.com/DvpvklR.png";
         Picasso
-                .with(UsageExampleSimpleLoading.this)
+                .with(context)
                 .load(internetUrl)
                 .into(imageViewInternet);
     }
@@ -57,7 +59,7 @@ public class UsageExampleSimpleLoading extends ActionBarActivity {
     private void loadImageByResourceId() {
         int resourceId = R.mipmap.ic_launcher;
         Picasso
-                .with(UsageExampleSimpleLoading.this)
+                .with(context)
                 .load(resourceId)
                 .into(imageViewResource);
     }
@@ -66,16 +68,16 @@ public class UsageExampleSimpleLoading extends ActionBarActivity {
         // this file probably does not exist on your device. However, you can use any file path, which points to an image file
         File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "Running.jpg");
         Picasso
-                .with(UsageExampleSimpleLoading.this)
+                .with(context)
                 .load(file)
                 .into(imageViewFile);
     }
 
     private void loadImageByUri() {
         // this could be any Uri. for demonstration purposes we're just creating an Uri pointing to a launcher icon
-        Uri uri = resourceIdToUri(UsageExampleSimpleLoading.this, R.mipmap.future_studio_launcher);
+        Uri uri = resourceIdToUri(context, R.mipmap.future_studio_launcher);
         Picasso
-                .with(UsageExampleSimpleLoading.this)
+                .with(context)
                 .load(uri)
                 .into(imageViewUri);
     }

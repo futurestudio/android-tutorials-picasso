@@ -1,0 +1,66 @@
+package io.futurestud.tutorials.picasso.ui.activities;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.ImageView;
+
+import com.squareup.picasso.Picasso;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+import io.futurestud.tutorials.picasso.R;
+
+public class UsageExamplePlaceholdersAndErrors extends ActionBarActivity {
+
+    @InjectView(R.id.standard_list_imageview1) ImageView imageViewPlaceholder;
+    @InjectView(R.id.standard_list_imageview2) ImageView imageViewError;
+    @InjectView(R.id.standard_list_imageview3) ImageView imageViewFade;
+    @InjectView(R.id.standard_list_imageview4) ImageView imageViewCombined;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_standard_imageview);
+        ButterKnife.inject(this);
+
+        loadImageWithPlaceholder();
+        loadImageWithError();
+        loadImageNoFade();
+        loadImageCombination();
+    }
+
+    private void loadImageWithPlaceholder() {
+        Picasso
+                .with(UsageExamplePlaceholdersAndErrors.this)
+                .load(UsageExampleAdapter.eatFoodyImages[0])
+                .placeholder(R.mipmap.ic_launcher) // can also be a drawable
+                .into(imageViewPlaceholder);
+    }
+
+    private void loadImageWithError() {
+        Picasso
+                .with(UsageExamplePlaceholdersAndErrors.this)
+                .load("http://futurestud.io/non_existing_image.png")
+                .error(R.mipmap.future_studio_launcher) // will be displayed if the image cannot be loaded
+                .into(imageViewError);
+    }
+
+    private void loadImageNoFade() {
+        Picasso
+                .with(UsageExamplePlaceholdersAndErrors.this)
+                .load(UsageExampleAdapter.eatFoodyImages[0])
+                .noFade()
+                .into(imageViewFade);
+    }
+
+    private void loadImageCombination() {
+        Picasso
+                .with(UsageExamplePlaceholdersAndErrors.this)
+                .load(UsageExampleAdapter.eatFoodyImages[0])
+                .placeholder(R.mipmap.ic_launcher) // can also be a drawable
+                .error(R.mipmap.future_studio_launcher) // will be displayed if the image cannot be loaded
+                .noFade()
+                .into(imageViewCombined);
+    }
+}

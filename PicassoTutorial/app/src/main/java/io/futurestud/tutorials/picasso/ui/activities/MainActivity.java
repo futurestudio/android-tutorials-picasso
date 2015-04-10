@@ -29,15 +29,25 @@ public class MainActivity extends ListActivity {
 
         switch (position) {
             case 0:
-                startActivity(new Intent(this, UsageExampleSimpleLoading.class));
+                showExampleActivity(UsageExampleSimpleLoading.class);
+
                 break;
 
             case 1:
-                startActivity(new Intent(this, UsageExampleAdapter.class));
+                showExampleActivity(UsageExampleAdapter.class);
+                break;
+
+            case 2:
+                showExampleActivity(UsageExamplePlaceholdersAndErrors.class);
                 break;
 
             default:
 
         }
+    }
+
+    private void showExampleActivity(Class targetClass) {
+        startActivity(new Intent(this, targetClass));
+
     }
 }

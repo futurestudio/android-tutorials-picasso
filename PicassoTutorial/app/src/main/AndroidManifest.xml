@@ -30,6 +30,11 @@
             android:name=".ui.activities.UsageExampleSimpleLoading"
             android:label="Simple Loading Example"/>
 
+        <activity
+            android:name=".ui.activities.UsageExamplePlaceholdersAndErrors"
+            android:label="Placeholders Example"/>
+
+
     </application>
 
 </manifest>

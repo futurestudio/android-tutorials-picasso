@@ -25,8 +25,8 @@ public class DummyContent {
 
     static {
         addItem(new DummyItem("1", "Simple Image Loading"));
-        addItem(new DummyItem("2", "Adapter Loading"));
-        addItem(new DummyItem("3", "Placeholder, Error, Fading"));
+        addItem(new DummyItem("2", "ListView Adapters"));
+        addItem(new DummyItem("3", "Placeholder, Error & Fading"));
         addItem(new DummyItem("4", "Cropping, fit()"));
         addItem(new DummyItem("5", "Picasso Priority"));
         addItem(new DummyItem("6", "External Targets (Remoteview)"));

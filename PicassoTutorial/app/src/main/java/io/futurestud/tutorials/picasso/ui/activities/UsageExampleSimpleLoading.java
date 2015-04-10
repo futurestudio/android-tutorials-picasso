@@ -36,7 +36,7 @@ public class UsageExampleSimpleLoading extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.fragment_usage_example_simple_loading);
+        setContentView(R.layout.activity_usage_example_simple_loading);
         ButterKnife.inject(this);
 
         loadImageByInternetUrl();

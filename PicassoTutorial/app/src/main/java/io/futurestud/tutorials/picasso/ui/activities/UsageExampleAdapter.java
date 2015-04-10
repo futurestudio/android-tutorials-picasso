@@ -11,8 +11,7 @@ import io.futurestud.tutorials.picasso.ui.adapter.ImageListAdapter;
 
 public class UsageExampleAdapter extends ActionBarActivity {
 
-    @InjectView(R.id.usage_example_adapter_listview) ListView listView;
-    String[] eatFoodyImages = {
+    public static String[] eatFoodyImages = {
             "http://i.imgur.com/rFLNqWI.jpg",
             "http://i.imgur.com/C9pBVt7.jpg",
             "http://i.imgur.com/rT5vXE1.jpg",
@@ -28,6 +27,7 @@ public class UsageExampleAdapter extends ActionBarActivity {
             "http://i.imgur.com/COzBnru.jpg",
             "http://i.imgur.com/Z3QjilA.jpg",
     };
+    @InjectView(R.id.usage_example_adapter_listview) ListView listView;
 
     public UsageExampleAdapter() {
     }
@@ -36,7 +36,7 @@ public class UsageExampleAdapter extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.fragment_usage_example_adapter);
+        setContentView(R.layout.activity_usage_example_adapter);
         ButterKnife.inject(this);
 
         listView.setAdapter(new ImageListAdapter(UsageExampleAdapter.this, eatFoodyImages));

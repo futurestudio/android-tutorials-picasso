@@ -37,13 +37,8 @@ public class ImageListAdapter extends ArrayAdapter {
 
         Picasso
                 .with(context)
-                .cancelRequest((ImageView) convertView);
-
-        // load the image
-        Picasso
-                .with(context)
                 .load(imageUrls[position])
-                .fit()
+                .fit() // will explain later
                 .into((ImageView) convertView);
 
         return convertView;

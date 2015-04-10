@@ -2,12 +2,13 @@ package io.futurestud.tutorials.picasso.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 
 import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.ui.fragments.UsageExampleDetailFragment;
+import io.futurestud.tutorials.picasso.ui.fragments.UsageExampleSimpleLoading;
 
 
 /**
@@ -29,23 +30,9 @@ public class UsageExampleDetailActivity extends ActionBarActivity {
         // Show the Up button in the action bar.
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        // savedInstanceState is non-null when there is fragment state
-        // saved from previous configurations of this activity
-        // (e.g. when rotating the screen from portrait to landscape).
-        // In this case, the fragment will automatically be re-added
-        // to its container so we don't need to manually add it.
-        // For more information, see the Fragments API guide at:
-        //
-        // http://developer.android.com/guide/components/fragments.html
-        //
         if (savedInstanceState == null) {
-            // Create the detail fragment and add it to the activity
-            // using a fragment transaction.
-            Bundle arguments = new Bundle();
-            arguments.putString(UsageExampleDetailFragment.ARG_ITEM_ID,
-                    getIntent().getStringExtra(UsageExampleDetailFragment.ARG_ITEM_ID));
-            UsageExampleDetailFragment fragment = new UsageExampleDetailFragment();
-            fragment.setArguments(arguments);
+            UsageExampleSimpleLoading fragment = new UsageExampleSimpleLoading();
+
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.usageexample_detail_container, fragment)
                     .commit();

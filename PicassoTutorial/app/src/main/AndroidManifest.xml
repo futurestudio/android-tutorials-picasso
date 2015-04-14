@@ -27,8 +27,12 @@
             android:label="Simple Loading"/>
 
         <activity
-            android:name=".ui.activities.UsageExampleAdapter"
-            android:label="Adapter Example"/>
+            android:name=".ui.activities.UsageExampleListViewAdapter"
+            android:label="ListView Example"/>
+
+        <activity
+            android:name=".ui.activities.UsageExampleGridViewAdapter"
+            android:label="GridView Example"/>
 
         <activity
             android:name=".ui.activities.UsageExamplePlaceholdersAndErrors"

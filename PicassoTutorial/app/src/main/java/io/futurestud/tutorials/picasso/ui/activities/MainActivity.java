@@ -34,18 +34,22 @@ public class MainActivity extends ListActivity {
                 break;
 
             case 1:
-                showExampleActivity(UsageExampleAdapter.class);
+                showExampleActivity(UsageExampleListViewAdapter.class);
                 break;
 
             case 2:
-                showExampleActivity(UsageExamplePlaceholdersAndErrors.class);
+                showExampleActivity(UsageExampleGridViewAdapter.class);
                 break;
 
             case 3:
-                showExampleActivity(UsageExampleImageResizing.class);
+                showExampleActivity(UsageExamplePlaceholdersAndErrors.class);
                 break;
 
             case 4:
+                showExampleActivity(UsageExampleImageResizing.class);
+                break;
+
+            case 5:
                 showExampleActivity(UsageExampleRequestPriority.class);
                 break;
 

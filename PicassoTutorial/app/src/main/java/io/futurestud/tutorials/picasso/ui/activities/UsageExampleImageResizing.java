@@ -38,7 +38,7 @@ public class UsageExampleImageResizing extends ActionBarActivity {
     private void loadImageWithResize() {
         Picasso
                 .with(context)
-                .load(UsageExampleAdapter.eatFoodyImages[0])
+                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
                 .resize(600, 200) // resizes the image to these dimensions (in pixel). does not respect aspect ratio
                 .into(imageViewResize);
     }
@@ -46,7 +46,7 @@ public class UsageExampleImageResizing extends ActionBarActivity {
     private void loadImageWithResizeCenterCrop() {
         Picasso
                 .with(context)
-                .load(UsageExampleAdapter.eatFoodyImages[0])
+                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
                 .resize(600, 200) // resizes the image to these dimensions (in pixel)
                 .centerCrop() // This cropping technique scales the image so that it fills the requested bounds and then crops the extra.
                 .into(imageViewResizeCenterCrop);
@@ -55,7 +55,7 @@ public class UsageExampleImageResizing extends ActionBarActivity {
     private void loadImageWithResizeCenterInside() {
         Picasso
                 .with(context)
-                .load(UsageExampleAdapter.eatFoodyImages[0])
+                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
                 .resize(600, 200)
                 .centerInside() // this scales the image so that both dimensions are equal to or less than the requested bounds.
                 .into(imageViewResizeCenterInside);
@@ -64,7 +64,7 @@ public class UsageExampleImageResizing extends ActionBarActivity {
     private void loadImageWithResizeScaleDown() {
         Picasso
                 .with(context)
-                .load(UsageExampleAdapter.eatFoodyImages[0])
+                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
                 .resize(6000, 2000)
                 .onlyScaleDown()
                 .into(imageViewResizeScaleDown);
@@ -73,7 +73,7 @@ public class UsageExampleImageResizing extends ActionBarActivity {
     private void loadImageWithFit() {
         Picasso
                 .with(context)
-                .load(UsageExampleAdapter.eatFoodyImages[0])
+                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
                 .fit()
                         // .centerInside() // add a center() call to avoid a stretched image
                 .into(imageViewFit);

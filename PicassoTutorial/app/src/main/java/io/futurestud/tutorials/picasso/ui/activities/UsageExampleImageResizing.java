@@ -48,7 +48,7 @@ public class UsageExampleImageResizing extends ActionBarActivity {
                 .with(context)
                 .load(UsageExampleListViewAdapter.eatFoodyImages[0])
                 .resize(600, 200) // resizes the image to these dimensions (in pixel)
-                .centerCrop() // This cropping technique scales the image so that it fills the requested bounds and then crops the extra.
+                .centerCrop() // this cropping technique scales the image so that it fills the requested bounds and then crops the extra.
                 .into(imageViewResizeCenterCrop);
     }
 
@@ -66,7 +66,7 @@ public class UsageExampleImageResizing extends ActionBarActivity {
                 .with(context)
                 .load(UsageExampleListViewAdapter.eatFoodyImages[0])
                 .resize(6000, 2000)
-                .onlyScaleDown()
+                .onlyScaleDown() // the image will only be resized if it's bigger than 6000x2000 pixels.
                 .into(imageViewResizeScaleDown);
     }
 
@@ -75,7 +75,7 @@ public class UsageExampleImageResizing extends ActionBarActivity {
                 .with(context)
                 .load(UsageExampleListViewAdapter.eatFoodyImages[0])
                 .fit()
-                        // .centerInside() // add a center() call to avoid a stretched image
+                        // call  .centerInside() or .centerCrop() to avoid a stretched image
                 .into(imageViewFit);
     }
 }

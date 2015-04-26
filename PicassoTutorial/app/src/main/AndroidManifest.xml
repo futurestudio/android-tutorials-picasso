@@ -46,6 +46,9 @@
             android:name=".ui.activities.UsageExampleRequestPriority"
             android:label="Request Priority"/>
 
+        <activity
+            android:name=".ui.activities.UsageExampleRotationTransformation"
+            android:label="Rotation and Transformation"/>
 
     </application>
 

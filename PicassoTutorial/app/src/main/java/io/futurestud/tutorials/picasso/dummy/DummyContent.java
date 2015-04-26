@@ -33,8 +33,8 @@ public class DummyContent {
         addItem(new DummyItem("5", "Picasso Priority"));
         addItem(new DummyItem("6", "Callbacks, RemoteViews & Notifications"));
         addItem(new DummyItem("7", "Rotation and Transformation"));
-        addItem(new DummyItem("8", "Logging & Debugging"));
-        addItem(new DummyItem("9", "Influencing Image Caching"));
+        addItem(new DummyItem("8", "Influencing Image Caching"));
+        addItem(new DummyItem("9", "Cache Indicators, Logging & Stats"));
         addItem(new DummyItem("10", "Picasso.Builder"));
         addItem(new DummyItem("11", "Request Handlers"));
     }

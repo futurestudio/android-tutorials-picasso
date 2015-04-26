@@ -62,6 +62,10 @@ public class MainActivity extends ListActivity {
                 showExampleActivity(UsageExampleRotationTransformation.class);
                 break;
 
+            case 9:
+                showExampleActivity(UsageExampleLoggingAndStats.class);
+                break;
+
             default:
                 Toast.makeText(MainActivity.this, "not yet implemented", Toast.LENGTH_SHORT).show();
         }

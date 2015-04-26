@@ -10,9 +10,11 @@ import android.support.v8.renderscript.ScriptIntrinsicBlur;
 import com.squareup.picasso.Transformation;
 
 /**
- * Created by norman on 4/26/15.
+ * The code in this class is based on:
+ * - https://www.snip2code.com/Snippet/311486/This-is-a-Picasso-transform-that-blurs-a (adavis)
+ * - https://gist.github.com/ryanbateman/6667995 (ryanbateman)
+ * - https://futurestud.io/blog/how-to-use-the-renderscript-support-library-with-gradle-based-android-projects/
  */
-
 public class BlurTransformation implements Transformation {
 
     RenderScript rs;

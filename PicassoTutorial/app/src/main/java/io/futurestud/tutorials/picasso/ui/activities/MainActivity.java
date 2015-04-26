@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import io.futurestud.tutorials.picasso.dummy.DummyContent;
 
@@ -53,8 +54,16 @@ public class MainActivity extends ListActivity {
                 showExampleActivity(UsageExampleRequestPriority.class);
                 break;
 
-            default:
+            case 6:
+                // todo add callbacks activity
+                break;
 
+            case 7:
+                showExampleActivity(UsageExampleRotationTransformation.class);
+                break;
+
+            default:
+                Toast.makeText(MainActivity.this, "not yet implemented", Toast.LENGTH_SHORT).show();
         }
     }
 

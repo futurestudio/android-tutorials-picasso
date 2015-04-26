@@ -24,17 +24,19 @@ public class DummyContent {
     public static Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
 
     static {
-        addItem(new DummyItem("1", "Simple Image Loading"));
-        addItem(new DummyItem("2", "Adapter Use - ListView"));
-        addItem(new DummyItem("3", "Adapter Use - GridView"));
-        addItem(new DummyItem("4", "Placeholder, Error & Fading"));
-        addItem(new DummyItem("5", "Image Resizing, Cropping and fit()"));
+        addItem(new DummyItem("0", "Simple Image Loading"));
+        addItem(new DummyItem("1", "Adapter Use - ListView"));
+        addItem(new DummyItem("2", "Adapter Use - GridView"));
+        addItem(new DummyItem("3", "Placeholder, Error & Fading"));
+        addItem(new DummyItem("4", "Image Resizing, Cropping and fit()"));
 
-        addItem(new DummyItem("6", "Picasso Priority"));
-        addItem(new DummyItem("7", "External Targets (Remoteview)"));
-        addItem(new DummyItem("8", "Image Manipulation"));
-        addItem(new DummyItem("9", "Transformations"));
-        addItem(new DummyItem("10", "Picasso Builder"));
+        addItem(new DummyItem("5", "Picasso Priority"));
+        addItem(new DummyItem("6", "Callbacks, RemoteViews & Notifications"));
+        addItem(new DummyItem("7", "Rotation and Transformation"));
+        addItem(new DummyItem("8", "Logging & Debugging"));
+        addItem(new DummyItem("9", "Influencing Image Caching"));
+        addItem(new DummyItem("10", "Picasso.Builder"));
+        addItem(new DummyItem("11", "Request Handlers"));
     }
 
     private static void addItem(DummyItem item) {

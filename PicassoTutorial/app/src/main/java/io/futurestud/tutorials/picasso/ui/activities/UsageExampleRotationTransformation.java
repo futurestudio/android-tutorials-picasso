@@ -6,19 +6,24 @@ import android.support.v7.app.ActionBarActivity;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Transformation;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import io.futurestud.tutorials.picasso.R;
+import io.futurestud.tutorials.picasso.transformation.BlurTransformation;
+import io.futurestud.tutorials.picasso.transformation.GrayscaleTransformation;
 
 public class UsageExampleRotationTransformation extends ActionBarActivity {
 
 
     @InjectView(R.id.standard_list_imageview1) ImageView imageViewSimpleRotate;
     @InjectView(R.id.standard_list_imageview2) ImageView imageViewComplexRotate;
-    @InjectView(R.id.standard_list_imageview3) ImageView imageView3;
-    @InjectView(R.id.standard_list_imageview4) ImageView imageView4;
-    @InjectView(R.id.standard_list_imageview5) ImageView imageView5;
+    @InjectView(R.id.standard_list_imageview3) ImageView imageViewTransformationBlur;
+    @InjectView(R.id.standard_list_imageview4) ImageView imageViewTransformationsMultiple;
 
     private Context context = this;
 
@@ -31,6 +36,8 @@ public class UsageExampleRotationTransformation extends ActionBarActivity {
 
         loadImageWithSimpleRotate();
         loadImageWithComplexRotate();
+        loadImageWithTransformation();
+        loadImageWithMultipleTransformation();
     }
 
     private void loadImageWithSimpleRotate() {
@@ -49,4 +56,25 @@ public class UsageExampleRotationTransformation extends ActionBarActivity {
                 .into(imageViewComplexRotate);
     }
 
+    private void loadImageWithTransformation() {
+        Picasso
+                .with(context)
+                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                        //.transform(new GrayscaleTransformation(Picasso.with(context)))
+                .transform(new BlurTransformation(context))
+                .into(imageViewTransformationBlur);
+    }
+
+    private void loadImageWithMultipleTransformation() {
+        List<Transformation> transformations = new ArrayList<>();
+
+        transformations.add(new GrayscaleTransformation(Picasso.with(context)));
+        transformations.add(new BlurTransformation(context));
+
+        Picasso
+                .with(context)
+                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .transform(transformations)
+                .into(imageViewTransformationsMultiple);
+    }
 }

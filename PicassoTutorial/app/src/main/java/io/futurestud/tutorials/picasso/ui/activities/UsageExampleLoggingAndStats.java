@@ -31,10 +31,12 @@ public class UsageExampleLoggingAndStats extends ActionBarActivity {
         setContentView(R.layout.activity_standard_imageview);
         ButterKnife.inject(this);
 
+        // enabling cache indicators
         Picasso
                 .with(context)
                 .setIndicatorsEnabled(true);
 
+        // enable logging
         Picasso
                 .with(context)
                 .setLoggingEnabled(true);
@@ -46,6 +48,11 @@ public class UsageExampleLoggingAndStats extends ActionBarActivity {
         printPicassoStatsSnapshot();
     }
 
+    /**
+     * This method makes sure that the image is in memory by using .fetch().
+     * After the request is successful, it'll load the image into the ImageView.
+     * In 99% of the cases, this should result in the image still being in the memory cache.
+     */
     private void loadImageBitmapFromMemory() {
         Picasso.with(context).load(UsageExampleListViewAdapter.eatFoodyImages[0]).fetch(new Callback() {
             @Override
@@ -63,6 +70,11 @@ public class UsageExampleLoggingAndStats extends ActionBarActivity {
         });
     }
 
+    /**
+     * Just like the loadImageBitmapFromMemory() method, we first call fetch() to load the image in our caches.
+     * In order to make sure this image does not come from the memory cache, we specifically set the request to ignore the memory cache with .memoryPolicy().
+     * This should result in 99% of the cases that the image loads from the disk cache.
+     */
     private void loadImageBitmapFromDisk() {
         Picasso.with(context).load(UsageExampleListViewAdapter.eatFoodyImages[1]).fetch(new Callback() {
             @Override
@@ -70,7 +82,7 @@ public class UsageExampleLoggingAndStats extends ActionBarActivity {
                 Picasso
                         .with(context)
                         .load(UsageExampleListViewAdapter.eatFoodyImages[1])
-                        .memoryPolicy(MemoryPolicy.NO_CACHE)
+                        .memoryPolicy(MemoryPolicy.NO_CACHE, MemoryPolicy.NO_STORE)
                         .into(imageViewFromDisk);
             }
 
@@ -81,6 +93,9 @@ public class UsageExampleLoggingAndStats extends ActionBarActivity {
         });
     }
 
+    /**
+     * This method forces the image to be loaded from the network by skipping the caches.
+     */
     private void loadImageBitmapFromNetwork() {
         Picasso
                 .with(context)
@@ -90,9 +105,15 @@ public class UsageExampleLoggingAndStats extends ActionBarActivity {
                 .into(imageViewFromNetwork);
     }
 
+    /**
+     * overarching stats of all Picasso requests
+     */
     private void printPicassoStatsSnapshot() {
         StatsSnapshot picassoStats = Picasso.with(context).getSnapshot();
 
+        // you could set the debugger here to analyze the picassoStats object
+
+        // or print the stats to Android Logcat
         Log.d("Picasso Stats", picassoStats.toString());
     }
 }

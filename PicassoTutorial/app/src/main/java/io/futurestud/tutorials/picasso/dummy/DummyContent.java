@@ -29,7 +29,6 @@ public class DummyContent {
         addItem(new DummyItem("2", "Adapter Use - GridView"));
         addItem(new DummyItem("3", "Placeholder, Error & Fading"));
         addItem(new DummyItem("4", "Image Resizing, Cropping and fit()"));
-
         addItem(new DummyItem("5", "Picasso Priority"));
         addItem(new DummyItem("6", "Callbacks, RemoteViews & Notifications"));
         addItem(new DummyItem("7", "Rotation and Transformation"));

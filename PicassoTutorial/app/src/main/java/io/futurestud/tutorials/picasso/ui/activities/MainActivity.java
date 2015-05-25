@@ -55,7 +55,7 @@ public class MainActivity extends ListActivity {
                 break;
 
             case 6:
-                // todo add callbacks activity
+                showExampleActivity(UsageExampleTargetsAndRemoteViews.class);
                 break;
 
             case 7:

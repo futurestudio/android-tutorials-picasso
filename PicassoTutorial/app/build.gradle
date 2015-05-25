@@ -35,10 +35,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.0.0'
-    compile 'com.android.support:support-v4:22.0.0'
+    // Android's support library for the framework (not necessary for Picasso)
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.android.support:support-v4:22.1.1'
 
+    // image loading library Picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
 
     // just a little view helper to makes things easier for us

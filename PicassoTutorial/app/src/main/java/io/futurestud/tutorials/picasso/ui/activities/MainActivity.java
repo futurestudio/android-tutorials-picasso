@@ -31,7 +31,6 @@ public class MainActivity extends ListActivity {
         switch (position) {
             case 0:
                 showExampleActivity(UsageExampleSimpleLoading.class);
-
                 break;
 
             case 1:
@@ -66,6 +65,14 @@ public class MainActivity extends ListActivity {
                 showExampleActivity(UsageExampleLoggingAndStats.class);
                 break;
 
+            case 10:
+                showExampleActivity(UsageExamplePicassoBuilderBasics.class);
+                break;
+
+            case 11:
+                showExampleActivity(UsageExamplePicassoBuilderRequestHandler.class);
+                break;
+
             default:
                 Toast.makeText(MainActivity.this, "not yet implemented", Toast.LENGTH_SHORT).show();
         }
@@ -73,6 +80,5 @@ public class MainActivity extends ListActivity {
 
     private void showExampleActivity(Class targetClass) {
         startActivity(new Intent(this, targetClass));
-
     }
 }

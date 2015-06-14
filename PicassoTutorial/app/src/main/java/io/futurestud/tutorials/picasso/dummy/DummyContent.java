@@ -34,8 +34,8 @@ public class DummyContent {
         addItem(new DummyItem("7", "Rotation and Transformation"));
         addItem(new DummyItem("8", "Influencing Image Caching"));
         addItem(new DummyItem("9", "Cache Indicators, Logging & Stats"));
-        addItem(new DummyItem("10", "Picasso.Builder"));
-        addItem(new DummyItem("11", "Request Handlers"));
+        addItem(new DummyItem("10", "Picasso.Builder Basics"));
+        addItem(new DummyItem("11", "Custom Request Handlers"));
     }
 
     private static void addItem(DummyItem item) {

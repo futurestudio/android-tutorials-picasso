@@ -58,6 +58,14 @@
             android:name=".ui.activities.UsageExampleLoggingAndStats"
             android:label="Cache Indicators, Logging and Stats"/>
 
+        <activity
+            android:name=".ui.activities.UsageExamplePicassoBuilderBasics"
+            android:label="Picasso.Builder Basics"/>
+
+        <activity
+            android:name=".ui.activities.UsageExamplePicassoBuilderRequestHandler"
+            android:label="Custom Request Handlers"/>
+
     </application>
 
 </manifest>

@@ -42,6 +42,8 @@ dependencies {
     // image loading library Picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
 
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+
     // just a little view helper to makes things easier for us
     // not necessary for using Picasso
     compile 'com.jakewharton:butterknife:6.1.0'

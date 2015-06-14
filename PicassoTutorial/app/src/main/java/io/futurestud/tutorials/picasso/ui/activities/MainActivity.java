@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import io.futurestud.tutorials.picasso.dummy.DummyContent;
+import io.futurestud.tutorials.picasso.ui.MenuContent;
 
 
 public class MainActivity extends ListActivity {
@@ -21,7 +21,7 @@ public class MainActivity extends ListActivity {
                 this,
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
-                DummyContent.ITEMS));
+                MenuContent.ITEMS));
     }
 
     @Override

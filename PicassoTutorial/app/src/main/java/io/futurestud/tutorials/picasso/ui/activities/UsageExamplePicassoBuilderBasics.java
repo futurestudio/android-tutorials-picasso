@@ -59,7 +59,12 @@ public class UsageExamplePicassoBuilderBasics extends ActionBarActivity {
         // set the global instance to use this picasso object
         // all following Picasso (with Picasso.with(Context context) requests will use this picasso object
         // you can only use the setSingletonInstance() method once!
-        Picasso.setSingletonInstance(picasso);
+        try {
+            Picasso.setSingletonInstance(picasso);
+        } catch (IllegalStateException ignored) {
+            // Picasso instance was already set
+            // cannot set it after Picasso was already used
+        }
 
         // you can continue to use Picasso.with(Context context)
         Picasso

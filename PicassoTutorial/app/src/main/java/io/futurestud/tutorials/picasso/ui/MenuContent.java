@@ -1,4 +1,4 @@
-package io.futurestud.tutorials.picasso.dummy;
+package io.futurestud.tutorials.picasso.ui;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import java.util.Map;
  * <p/>
  * TODO: Replace all uses of this class before publishing your app.
  */
-public class DummyContent {
+public class MenuContent {
 
     /**
      * An array of sample (dummy) items.

@@ -93,6 +93,5 @@ public class UsageExamplePicassoBuilderRequestHandler extends ActionBarActivity 
             // return the result with the bitmap and the source info
             return new Result(bitmap, Picasso.LoadedFrom.DISK);
         }
-
     }
 }

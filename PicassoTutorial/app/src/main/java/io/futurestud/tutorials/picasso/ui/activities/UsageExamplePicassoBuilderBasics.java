@@ -63,7 +63,7 @@ public class UsageExamplePicassoBuilderBasics extends ActionBarActivity {
             Picasso.setSingletonInstance(picasso);
         } catch (IllegalStateException ignored) {
             // Picasso instance was already set
-            // cannot set it after Picasso was already used
+            // cannot set it after Picasso.with(Context) was already used
         }
 
         // you can continue to use Picasso.with(Context context)

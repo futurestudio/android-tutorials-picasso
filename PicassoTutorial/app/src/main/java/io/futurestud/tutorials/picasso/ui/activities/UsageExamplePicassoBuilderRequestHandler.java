@@ -13,15 +13,15 @@ import com.squareup.picasso.RequestHandler;
 
 import java.io.IOException;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import io.futurestud.tutorials.picasso.R;
 
 public class UsageExamplePicassoBuilderRequestHandler extends ActionBarActivity {
 
-    @InjectView(R.id.standard_list_imageview1) ImageView imageView1;
-    @InjectView(R.id.standard_list_imageview2) ImageView imageView2;
-    @InjectView(R.id.standard_list_imageview3) ImageView imageView3;
+    @Bind(R.id.standard_list_imageview1) ImageView imageView1;
+    @Bind(R.id.standard_list_imageview2) ImageView imageView2;
+    @Bind(R.id.standard_list_imageview3) ImageView imageView3;
 
     private Context context = this;
 
@@ -30,7 +30,7 @@ public class UsageExamplePicassoBuilderRequestHandler extends ActionBarActivity 
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_standard_imageview);
-        ButterKnife.inject(this);
+        ButterKnife.bind( this );
 
         loadImageWithCustomRequestHandler();
     }

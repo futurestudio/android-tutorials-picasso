@@ -45,7 +45,7 @@ public class UsageExampleTargetsAndRemoteViews extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_standard_imageview);
-        ButterKnife.inject(this);
+        ButterKnife.bind( this );
 
         loadImageBitmapWithTarget();
         loadImageBitmapForCustomNotification();

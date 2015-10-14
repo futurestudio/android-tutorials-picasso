@@ -9,17 +9,17 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.picasso.OkHttpDownloader;
 import com.squareup.picasso.Picasso;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.okhttp.UnsafeOkHttpClient;
 
 public class UsageExamplePicassoBuilderBasics extends ActionBarActivity {
 
-    @InjectView(R.id.standard_list_imageview1) ImageView imageView1;
-    @InjectView(R.id.standard_list_imageview2) ImageView imageView2;
-    @InjectView(R.id.standard_list_imageview3) ImageView imageView3;
-    @InjectView(R.id.standard_list_imageview4) ImageView imageView4;
+    @Bind(R.id.standard_list_imageview1) ImageView imageView1;
+    @Bind(R.id.standard_list_imageview2) ImageView imageView2;
+    @Bind(R.id.standard_list_imageview3) ImageView imageView3;
+    @Bind(R.id.standard_list_imageview4) ImageView imageView4;
 
     private Context context = this;
 
@@ -28,7 +28,7 @@ public class UsageExamplePicassoBuilderBasics extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_standard_imageview);
-        ButterKnife.inject(this);
+        ButterKnife.bind( this );
 
         loadImageViaLocalPicassoInstance();
         loadImageViaGlobalPicassoInstance();

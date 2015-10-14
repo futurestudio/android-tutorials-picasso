@@ -11,19 +11,18 @@ import com.squareup.picasso.Transformation;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.transformation.BlurTransformation;
 import io.futurestud.tutorials.picasso.transformation.GrayscaleTransformation;
 
 public class UsageExampleRotationTransformation extends ActionBarActivity {
 
-
-    @InjectView(R.id.standard_list_imageview1) ImageView imageViewSimpleRotate;
-    @InjectView(R.id.standard_list_imageview2) ImageView imageViewComplexRotate;
-    @InjectView(R.id.standard_list_imageview3) ImageView imageViewTransformationBlur;
-    @InjectView(R.id.standard_list_imageview4) ImageView imageViewTransformationsMultiple;
+    @Bind(R.id.standard_list_imageview1) ImageView imageViewSimpleRotate;
+    @Bind(R.id.standard_list_imageview2) ImageView imageViewComplexRotate;
+    @Bind(R.id.standard_list_imageview3) ImageView imageViewTransformationBlur;
+    @Bind(R.id.standard_list_imageview4) ImageView imageViewTransformationsMultiple;
 
     private Context context = this;
 
@@ -32,7 +31,7 @@ public class UsageExampleRotationTransformation extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_standard_imageview);
-        ButterKnife.inject(this);
+        ButterKnife.bind( this );
 
         loadImageWithSimpleRotate();
         loadImageWithComplexRotate();

@@ -8,17 +8,17 @@ import android.widget.ImageView;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import io.futurestud.tutorials.picasso.R;
 
 public class UsageExamplePlaceholdersAndErrors extends ActionBarActivity {
 
-    @InjectView(R.id.standard_list_imageview1) ImageView imageViewPlaceholder;
-    @InjectView(R.id.standard_list_imageview2) ImageView imageViewError;
-    @InjectView(R.id.standard_list_imageview3) ImageView imageViewFade;
-    @InjectView(R.id.standard_list_imageview4) ImageView imageViewCombined;
-    @InjectView(R.id.standard_list_imageview5) ImageView imageViewNoPlaceholder;
+    @Bind(R.id.standard_list_imageview1) ImageView imageViewPlaceholder;
+    @Bind(R.id.standard_list_imageview2) ImageView imageViewError;
+    @Bind(R.id.standard_list_imageview3) ImageView imageViewFade;
+    @Bind(R.id.standard_list_imageview4) ImageView imageViewCombined;
+    @Bind(R.id.standard_list_imageview5) ImageView imageViewNoPlaceholder;
 
     private Context context = this;
 
@@ -27,7 +27,7 @@ public class UsageExamplePlaceholdersAndErrors extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_standard_imageview);
-        ButterKnife.inject(this);
+        ButterKnife.bind( this );
 
         loadImageWithPlaceholder();
         loadImageWithError();

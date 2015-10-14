@@ -12,15 +12,15 @@ import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.StatsSnapshot;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import io.futurestud.tutorials.picasso.R;
 
 public class UsageExampleLoggingAndStats extends ActionBarActivity {
 
-    @InjectView(R.id.standard_list_imageview1) ImageView imageViewFromMemory;
-    @InjectView(R.id.standard_list_imageview2) ImageView imageViewFromDisk;
-    @InjectView(R.id.standard_list_imageview3) ImageView imageViewFromNetwork;
+    @Bind(R.id.standard_list_imageview1) ImageView imageViewFromMemory;
+    @Bind(R.id.standard_list_imageview2) ImageView imageViewFromDisk;
+    @Bind(R.id.standard_list_imageview3) ImageView imageViewFromNetwork;
 
     private Context context = this;
 
@@ -29,7 +29,7 @@ public class UsageExampleLoggingAndStats extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_standard_imageview);
-        ButterKnife.inject(this);
+        ButterKnife.bind( this );
 
         // enabling cache indicators
         Picasso

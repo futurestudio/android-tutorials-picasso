@@ -66,6 +66,10 @@
             android:name=".ui.activities.UsageExamplePicassoBuilderRequestHandler"
             android:label="Custom Request Handlers"/>
 
+        <activity
+            android:name=".ui.activities.UsageExampleAdvancedListView"
+            android:label="Advanced ListView"/>
+
     </application>
 
 </manifest>

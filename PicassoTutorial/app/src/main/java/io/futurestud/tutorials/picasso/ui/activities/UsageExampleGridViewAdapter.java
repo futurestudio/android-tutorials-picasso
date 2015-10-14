@@ -7,7 +7,7 @@ import android.widget.GridView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import io.futurestud.tutorials.picasso.R;
-import io.futurestud.tutorials.picasso.ui.adapter.ImageListAdapter;
+import io.futurestud.tutorials.picasso.ui.adapter.SimpleImageListAdapter;
 
 public class UsageExampleGridViewAdapter extends ActionBarActivity {
 
@@ -21,8 +21,9 @@ public class UsageExampleGridViewAdapter extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_usage_example_gridview);
+        GridView gridView = (GridView) findViewById( R.id.usage_example_gridview );
         ButterKnife.inject(this);
 
-        gridView.setAdapter(new ImageListAdapter(UsageExampleGridViewAdapter.this, UsageExampleListViewAdapter.eatFoodyImages));
+        gridView.setAdapter( new SimpleImageListAdapter( UsageExampleGridViewAdapter.this, UsageExampleListViewAdapter.eatFoodyImages ) );
     }
 }

@@ -7,9 +7,9 @@ import android.widget.ListView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import io.futurestud.tutorials.picasso.R;
-import io.futurestud.tutorials.picasso.ui.adapter.SimpleImageListAdapter;
+import io.futurestud.tutorials.picasso.ui.adapter.AdvancedImageListAdapter;
 
-public class UsageExampleListViewAdapter extends ActionBarActivity {
+public class UsageExampleAdvancedListView extends ActionBarActivity {
 
     public static String[] eatFoodyImages = {
             "http://i.imgur.com/rFLNqWI.jpg",
@@ -30,7 +30,7 @@ public class UsageExampleListViewAdapter extends ActionBarActivity {
 
     @InjectView(R.id.usage_example_listview) ListView listView;
 
-    public UsageExampleListViewAdapter() {
+    public UsageExampleAdvancedListView() {
     }
 
     @Override
@@ -38,8 +38,8 @@ public class UsageExampleListViewAdapter extends ActionBarActivity {
         super.onCreate( savedInstanceState );
 
         setContentView( R.layout.activity_usage_example_listview );
-        ButterKnife.inject(this);
+        ButterKnife.inject( this );
 
-        listView.setAdapter( new SimpleImageListAdapter( UsageExampleListViewAdapter.this, eatFoodyImages ) );
+        listView.setAdapter( new AdvancedImageListAdapter( UsageExampleAdvancedListView.this, eatFoodyImages ) );
     }
 }

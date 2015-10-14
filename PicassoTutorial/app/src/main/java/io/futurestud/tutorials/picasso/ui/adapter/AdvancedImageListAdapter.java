@@ -32,22 +32,34 @@ public class AdvancedImageListAdapter extends ArrayAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder viewHolder;
+
         if (null == convertView) {
             convertView = inflater.inflate( R.layout.listview_item_advanced, parent, false );
+
+            viewHolder = new ViewHolder();
+            viewHolder.text = (TextView) convertView.findViewById( R.id.listview_item_advanced_text );
+            viewHolder.icon = (ImageView) convertView.findViewById( R.id.listview_item_advanced_imageview );
+
+            convertView.setTag( viewHolder );
+        } else {
+            viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        ImageView imageView = (ImageView) convertView.findViewById( R.id.listview_item_advanced_imageview );
-        TextView textView = (TextView) convertView.findViewById( R.id.listview_item_advanced_text );
-
-        textView.setText( "Position " + position );
+        viewHolder.text.setText( "Position " + position );
 
         Picasso
                 .with( context )
                 .load( imageUrls[position] )
                 .fit()
                 .centerCrop()
-                .into( imageView );
+                .into( viewHolder.icon );
 
         return convertView;
+    }
+
+    static class ViewHolder {
+        TextView text;
+        ImageView icon;
     }
 }

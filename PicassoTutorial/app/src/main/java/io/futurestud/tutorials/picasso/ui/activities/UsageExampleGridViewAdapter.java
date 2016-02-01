@@ -24,6 +24,6 @@ public class UsageExampleGridViewAdapter extends ActionBarActivity {
         GridView gridView = (GridView) findViewById( R.id.usage_example_gridview );
         ButterKnife.bind( this );
 
-        gridView.setAdapter( new SimpleImageListAdapter( UsageExampleGridViewAdapter.this, UsageExampleListViewAdapter.eatFoodyImages ) );
+        gridView.setAdapter(new SimpleImageListAdapter(UsageExampleGridViewAdapter.this, UsageExampleListView.eatFoodyImages));
     }
 }

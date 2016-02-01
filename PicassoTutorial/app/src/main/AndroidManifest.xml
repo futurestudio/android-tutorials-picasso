@@ -27,7 +27,7 @@
             android:label="Simple Loading"/>
 
         <activity
-            android:name=".ui.activities.UsageExampleListViewAdapter"
+            android:name=".ui.activities.UsageExampleListView"
             android:label="ListView Example"/>
 
         <activity

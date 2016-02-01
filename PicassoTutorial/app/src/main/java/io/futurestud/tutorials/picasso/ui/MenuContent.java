@@ -8,7 +8,7 @@ import java.util.Map;
 import io.futurestud.tutorials.picasso.ui.activities.UsageExampleAdvancedListView;
 import io.futurestud.tutorials.picasso.ui.activities.UsageExampleGridViewAdapter;
 import io.futurestud.tutorials.picasso.ui.activities.UsageExampleImageResizing;
-import io.futurestud.tutorials.picasso.ui.activities.UsageExampleListViewAdapter;
+import io.futurestud.tutorials.picasso.ui.activities.UsageExampleListView;
 import io.futurestud.tutorials.picasso.ui.activities.UsageExampleLoggingAndStats;
 import io.futurestud.tutorials.picasso.ui.activities.UsageExamplePicassoBuilderBasics;
 import io.futurestud.tutorials.picasso.ui.activities.UsageExamplePicassoBuilderRequestHandler;
@@ -38,7 +38,7 @@ public class MenuContent {
 
     static {
         addItem( new DummyItem( "0", "Simple Image Loading", UsageExampleSimpleLoading.class ) );
-        addItem( new DummyItem( "1", "Adapter Use - ListView", UsageExampleListViewAdapter.class ) );
+        addItem(new DummyItem("1", "Adapter Use - ListView", UsageExampleListView.class));
         addItem( new DummyItem( "2", "Adapter Use - GridView", UsageExampleGridViewAdapter.class ) );
         addItem( new DummyItem( "3", "Placeholder, Error & Fading", UsageExamplePlaceholdersAndErrors.class ) );
         addItem( new DummyItem( "4", "Image Resizing, Cropping and fit()", UsageExampleImageResizing.class ) );

@@ -45,7 +45,7 @@ public class UsageExamplePicassoBuilderBasics extends ActionBarActivity {
 
         // instead of Picasso.with(Context context) you directly use this picasso object
         picasso
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .into(imageView1);
     }
 
@@ -69,7 +69,7 @@ public class UsageExamplePicassoBuilderBasics extends ActionBarActivity {
         // you can continue to use Picasso.with(Context context)
         Picasso
                 .with(UsageExamplePicassoBuilderBasics.this)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[1])
+                .load(UsageExampleListView.eatFoodyImages[1])
                 .into(imageView2);
     }
 
@@ -86,7 +86,7 @@ public class UsageExamplePicassoBuilderBasics extends ActionBarActivity {
         Picasso picasso = picassoBuilder.build();
 
         picasso
-                .load(UsageExampleListViewAdapter.eatFoodyImages[2])
+                .load(UsageExampleListView.eatFoodyImages[2])
                 .into(imageView3);
     }
 
@@ -106,7 +106,7 @@ public class UsageExamplePicassoBuilderBasics extends ActionBarActivity {
         Picasso picasso = picassoBuilder.build();
 
         picasso
-                .load(UsageExampleListViewAdapter.eatFoodyImages[3])
+                .load(UsageExampleListView.eatFoodyImages[3])
                 .into(imageView4);
     }
 }

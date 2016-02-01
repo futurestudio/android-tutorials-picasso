@@ -1,6 +1,7 @@
 package io.futurestud.tutorials.picasso.ui.adapter;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,11 +36,31 @@ public class SimpleImageListAdapter extends ArrayAdapter {
             convertView = inflater.inflate(R.layout.listview_item_image, parent, false);
         }
 
-        Picasso
-                .with(context)
-                .load(imageUrls[position])
-                .fit() // will explain later
-                .into((ImageView) convertView);
+        ImageView imageView = (ImageView) convertView;
+
+        if (TextUtils.isEmpty(imageUrls[position])) {
+            // option 1: cancel Picasso request and clear ImageView
+            Picasso
+                    .with(context)
+                    .cancelRequest(imageView);
+
+            imageView.setImageDrawable(null);
+
+            // option 2: load placeholder with Picasso
+            /*
+            Picasso
+                    .with(context)
+                    .load(R.drawable.floorplan)
+                    .into(imageView);
+            */
+        }
+        else {
+            Picasso
+                    .with(context)
+                    .load(imageUrls[position])
+                    .fit() // will explain later
+                    .into(imageView);
+        }
 
         return convertView;
     }

@@ -54,7 +54,7 @@ public class UsageExampleTargetsAndRemoteViews extends ActionBarActivity {
     private void loadImageBitmapWithTarget() {
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .into(target);
     }
 
@@ -92,7 +92,7 @@ public class UsageExampleTargetsAndRemoteViews extends ActionBarActivity {
         // load image with Picasso into the RemoteViews of the notification
         Picasso
                 .with(UsageExampleTargetsAndRemoteViews.this)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .into(remoteViews, R.id.remoteview_notification_icon, NOTIFICATION_ID, notification);
     }
 

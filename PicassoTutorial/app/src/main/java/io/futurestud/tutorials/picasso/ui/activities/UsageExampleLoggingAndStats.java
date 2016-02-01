@@ -54,12 +54,12 @@ public class UsageExampleLoggingAndStats extends ActionBarActivity {
      * In 99% of the cases, this should result in the image still being in the memory cache.
      */
     private void loadImageBitmapFromMemory() {
-        Picasso.with(context).load(UsageExampleListViewAdapter.eatFoodyImages[0]).fetch(new Callback() {
+        Picasso.with(context).load(UsageExampleListView.eatFoodyImages[0]).fetch(new Callback() {
             @Override
             public void onSuccess() {
                 Picasso
                         .with(context)
-                        .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                        .load(UsageExampleListView.eatFoodyImages[0])
                         .into(imageViewFromMemory);
             }
 
@@ -76,12 +76,12 @@ public class UsageExampleLoggingAndStats extends ActionBarActivity {
      * This should result in 99% of the cases that the image loads from the disk cache.
      */
     private void loadImageBitmapFromDisk() {
-        Picasso.with(context).load(UsageExampleListViewAdapter.eatFoodyImages[1]).fetch(new Callback() {
+        Picasso.with(context).load(UsageExampleListView.eatFoodyImages[1]).fetch(new Callback() {
             @Override
             public void onSuccess() {
                 Picasso
                         .with(context)
-                        .load(UsageExampleListViewAdapter.eatFoodyImages[1])
+                        .load(UsageExampleListView.eatFoodyImages[1])
                         .memoryPolicy(MemoryPolicy.NO_CACHE, MemoryPolicy.NO_STORE)
                         .into(imageViewFromDisk);
             }
@@ -99,7 +99,7 @@ public class UsageExampleLoggingAndStats extends ActionBarActivity {
     private void loadImageBitmapFromNetwork() {
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[2])
+                .load(UsageExampleListView.eatFoodyImages[2])
                 .memoryPolicy(MemoryPolicy.NO_CACHE)
                 .networkPolicy(NetworkPolicy.NO_CACHE)
                 .into(imageViewFromNetwork);

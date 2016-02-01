@@ -40,7 +40,7 @@ public class UsageExamplePlaceholdersAndErrors extends ActionBarActivity {
     private void loadImageWithPlaceholder() {
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .placeholder(R.mipmap.ic_launcher) // can also be a drawable
                 .into(imageViewPlaceholder);
     }
@@ -56,7 +56,7 @@ public class UsageExamplePlaceholdersAndErrors extends ActionBarActivity {
     private void loadImageNoFade() {
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .noFade()
                 .into(imageViewFade);
     }
@@ -64,7 +64,7 @@ public class UsageExamplePlaceholdersAndErrors extends ActionBarActivity {
     private void loadImageCombination() {
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .placeholder(R.mipmap.ic_launcher) // can also be a drawable
                 .error(R.mipmap.future_studio_launcher) // will be displayed if the image cannot be loaded
                 .noFade()
@@ -75,7 +75,7 @@ public class UsageExamplePlaceholdersAndErrors extends ActionBarActivity {
         // load an image into the imageview
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .placeholder(R.mipmap.ic_launcher) // can also be a drawable
                 .into(imageViewNoPlaceholder, new Callback() {
                     @Override
@@ -83,7 +83,7 @@ public class UsageExamplePlaceholdersAndErrors extends ActionBarActivity {
                         // once the image is loaded, load the next image
                         Picasso
                                 .with(context)
-                                .load(UsageExampleListViewAdapter.eatFoodyImages[1])
+                                .load(UsageExampleListView.eatFoodyImages[1])
                                 .noPlaceholder() // but don't clear the imageview or set a placeholder; just leave the previous image in until the new one is ready
                                 .into(imageViewNoPlaceholder);
                     }

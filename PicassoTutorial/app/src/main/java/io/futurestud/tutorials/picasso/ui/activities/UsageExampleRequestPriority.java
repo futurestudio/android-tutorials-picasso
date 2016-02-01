@@ -33,7 +33,7 @@ public class UsageExampleRequestPriority extends ActionBarActivity {
     private void loadImageWithHighPriority() {
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .fit()
                 .priority(Picasso.Priority.HIGH)
                 .into(imageViewHero);
@@ -42,14 +42,14 @@ public class UsageExampleRequestPriority extends ActionBarActivity {
     private void loadImagesWithLowPriority() {
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[1])
+                .load(UsageExampleListView.eatFoodyImages[1])
                 .fit()
                 .priority(Picasso.Priority.LOW)
                 .into(imageViewLowPrioLeft);
 
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[2])
+                .load(UsageExampleListView.eatFoodyImages[2])
                 .fit()
                 .priority(Picasso.Priority.LOW)
                 .into(imageViewLowPrioRight);

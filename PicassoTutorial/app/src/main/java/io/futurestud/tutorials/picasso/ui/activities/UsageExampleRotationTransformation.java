@@ -42,7 +42,7 @@ public class UsageExampleRotationTransformation extends ActionBarActivity {
     private void loadImageWithSimpleRotate() {
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .rotate(90f)
                 .into(imageViewSimpleRotate);
     }
@@ -58,7 +58,7 @@ public class UsageExampleRotationTransformation extends ActionBarActivity {
     private void loadImageWithTransformation() {
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                         //.transform(new GrayscaleTransformation(Picasso.with(context)))
                 .transform(new BlurTransformation(context))
                 .into(imageViewTransformationBlur);
@@ -72,7 +72,7 @@ public class UsageExampleRotationTransformation extends ActionBarActivity {
 
         Picasso
                 .with(context)
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .transform(transformations)
                 .into(imageViewTransformationsMultiple);
     }

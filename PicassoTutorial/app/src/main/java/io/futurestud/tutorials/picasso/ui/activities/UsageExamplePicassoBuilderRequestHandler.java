@@ -47,7 +47,7 @@ public class UsageExamplePicassoBuilderRequestHandler extends ActionBarActivity 
 
         // example #1: regular HTTP Uri schema, which will not use our custom request handler
         picasso
-                .load(UsageExampleListViewAdapter.eatFoodyImages[0])
+                .load(UsageExampleListView.eatFoodyImages[0])
                 .into(imageView1);
 
         // example #2 & #3: custom eatfoody Uri schema, which will trigger our custom request handler

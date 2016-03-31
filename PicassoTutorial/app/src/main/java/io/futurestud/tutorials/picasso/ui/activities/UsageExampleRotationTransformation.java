@@ -1,6 +1,7 @@
 package io.futurestud.tutorials.picasso.ui.activities;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
@@ -16,6 +17,8 @@ import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.transformation.BlurTransformation;
 import io.futurestud.tutorials.picasso.transformation.GrayscaleTransformation;
+import jp.wasabeef.picasso.transformations.ColorFilterTransformation;
+import jp.wasabeef.picasso.transformations.CropCircleTransformation;
 
 public class UsageExampleRotationTransformation extends AppCompatActivity {
 
@@ -23,6 +26,7 @@ public class UsageExampleRotationTransformation extends AppCompatActivity {
     @Bind(R.id.standard_list_imageview2) ImageView imageViewComplexRotate;
     @Bind(R.id.standard_list_imageview3) ImageView imageViewTransformationBlur;
     @Bind(R.id.standard_list_imageview4) ImageView imageViewTransformationsMultiple;
+    @Bind(R.id.standard_list_imageview5) ImageView imageViewTransformationLibrary;
 
     private Context context = this;
 
@@ -37,6 +41,7 @@ public class UsageExampleRotationTransformation extends AppCompatActivity {
         loadImageWithComplexRotate();
         loadImageWithTransformation();
         loadImageWithMultipleTransformation();
+        loadImageWithTransformationLibrary();
     }
 
     private void loadImageWithSimpleRotate() {
@@ -75,5 +80,17 @@ public class UsageExampleRotationTransformation extends AppCompatActivity {
                 .load(UsageExampleListView.eatFoodyImages[0])
                 .transform(transformations)
                 .into(imageViewTransformationsMultiple);
+    }
+
+
+    private void loadImageWithTransformationLibrary() {
+        int color = Color.parseColor("#339b59b6");
+
+        Picasso
+                .with(context)
+                .load(UsageExampleListView.eatFoodyImages[0])
+                .transform(new ColorFilterTransformation(color))
+                .transform(new CropCircleTransformation())
+                .into(imageViewTransformationLibrary);
     }
 }

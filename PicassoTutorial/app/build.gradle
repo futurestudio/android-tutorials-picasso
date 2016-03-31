@@ -73,6 +73,11 @@ dependencies {
     // if you want to use Picasso 2.5.2 with your own OkHttp3 downloader
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
 
+    // major transformations library: base
+    compile 'jp.wasabeef:picasso-transformations:2.1.0'
+    // major transformations library: if you want to use the GPU Filters
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+
     // just a little view helper to makes things easier for us
     // not necessary for using Picasso
     compile 'com.jakewharton:butterknife:7.0.1'

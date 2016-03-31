@@ -2,7 +2,7 @@ package io.futurestud.tutorials.picasso.ui.activities;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
@@ -17,7 +17,7 @@ import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.transformation.BlurTransformation;
 import io.futurestud.tutorials.picasso.transformation.GrayscaleTransformation;
 
-public class UsageExampleRotationTransformation extends ActionBarActivity {
+public class UsageExampleRotationTransformation extends AppCompatActivity {
 
     @Bind(R.id.standard_list_imageview1) ImageView imageViewSimpleRotate;
     @Bind(R.id.standard_list_imageview2) ImageView imageViewComplexRotate;

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
@@ -17,7 +17,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 
-public class UsageExamplePicassoBuilderRequestHandler extends ActionBarActivity {
+public class UsageExamplePicassoBuilderRequestHandler extends AppCompatActivity {
 
     @Bind(R.id.standard_list_imageview1) ImageView imageView1;
     @Bind(R.id.standard_list_imageview2) ImageView imageView2;

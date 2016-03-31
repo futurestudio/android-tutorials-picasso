@@ -4,7 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
@@ -15,7 +15,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 
-public class UsageExampleSimpleLoading extends ActionBarActivity {
+public class UsageExampleSimpleLoading extends AppCompatActivity {
 
     public static final String ANDROID_RESOURCE = "android.resource://";
     public static final String FOREWARD_SLASH = "/";

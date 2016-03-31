@@ -2,7 +2,7 @@ package io.futurestud.tutorials.picasso.ui.activities;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Callback;
@@ -12,7 +12,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 
-public class UsageExamplePlaceholdersAndErrors extends ActionBarActivity {
+public class UsageExamplePlaceholdersAndErrors extends AppCompatActivity {
 
     @Bind(R.id.standard_list_imageview1) ImageView imageViewPlaceholder;
     @Bind(R.id.standard_list_imageview2) ImageView imageViewError;

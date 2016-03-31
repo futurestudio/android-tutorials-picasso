@@ -2,7 +2,7 @@ package io.futurestud.tutorials.picasso.ui.activities;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.squareup.okhttp.OkHttpClient;
@@ -14,7 +14,7 @@ import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.okhttp.UnsafeOkHttpClient;
 
-public class UsageExamplePicassoBuilderBasics extends ActionBarActivity {
+public class UsageExamplePicassoBuilderBasics extends AppCompatActivity {
 
     @Bind(R.id.standard_list_imageview1) ImageView imageView1;
     @Bind(R.id.standard_list_imageview2) ImageView imageView2;

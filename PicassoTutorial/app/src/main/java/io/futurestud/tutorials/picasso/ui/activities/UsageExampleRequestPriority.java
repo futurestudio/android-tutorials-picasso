@@ -2,7 +2,7 @@ package io.futurestud.tutorials.picasso.ui.activities;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
@@ -11,7 +11,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 
-public class UsageExampleRequestPriority extends ActionBarActivity {
+public class UsageExampleRequestPriority extends AppCompatActivity {
 
     @Bind(R.id.activity_request_priority_hero) ImageView imageViewHero;
     @Bind(R.id.activity_request_priority_low_left) ImageView imageViewLowPrioLeft;

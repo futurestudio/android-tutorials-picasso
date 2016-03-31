@@ -1,7 +1,7 @@
 package io.futurestud.tutorials.picasso.ui.activities;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import butterknife.Bind;
@@ -9,7 +9,7 @@ import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.ui.adapter.SimpleImageListAdapter;
 
-public class UsageExampleListView extends ActionBarActivity {
+public class UsageExampleListView extends AppCompatActivity {
 
     public static String[] eatFoodyImages = {
             "http://i.imgur.com/rFLNqWI.jpg",

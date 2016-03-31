@@ -70,6 +70,10 @@
             android:name=".ui.activities.UsageExampleAdvancedListView"
             android:label="Advanced ListView"/>
 
+        <activity
+            android:name=".ui.activities.OkHttp3Example"
+            android:label="OkHttp3"/>
+
     </application>
 
 </manifest>

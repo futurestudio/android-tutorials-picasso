@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import io.futurestud.tutorials.picasso.ui.activities.OkHttp3Example;
 import io.futurestud.tutorials.picasso.ui.activities.UsageExampleAdvancedListView;
 import io.futurestud.tutorials.picasso.ui.activities.UsageExampleGridViewAdapter;
 import io.futurestud.tutorials.picasso.ui.activities.UsageExampleImageResizing;
@@ -29,12 +30,12 @@ public class MenuContent {
     /**
      * An array of sample (dummy) items.
      */
-    public static List<DummyItem> ITEMS = new ArrayList<DummyItem>();
+    public static List<DummyItem> ITEMS = new ArrayList<>();
 
     /**
      * A map of sample (dummy) items, by ID.
      */
-    public static Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
+    public static Map<String, DummyItem> ITEM_MAP = new HashMap<>();
 
     static {
         addItem( new DummyItem( "0", "Simple Image Loading", UsageExampleSimpleLoading.class ) );
@@ -49,8 +50,9 @@ public class MenuContent {
         addItem( new DummyItem( "9", "Cache Indicators, Logging & Stats", UsageExampleLoggingAndStats.class ) );
         addItem( new DummyItem( "10", "Picasso.Builder Basics", UsageExamplePicassoBuilderBasics.class ) );
         addItem( new DummyItem( "11", "Custom Request Handlers", UsageExamplePicassoBuilderRequestHandler.class ) );
+        addItem(new DummyItem("12", "OkHttp3", OkHttp3Example.class));
 
-        addItem( new DummyItem( "12", "Bonus: Advanced ListView", UsageExampleAdvancedListView.class ) );
+        addItem(new DummyItem("13", "Bonus: Advanced ListView", UsageExampleAdvancedListView.class));
     }
 
     private static void addItem(DummyItem item) {

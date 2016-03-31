@@ -59,13 +59,13 @@ android {
 
 dependencies {
     // Android's support library for the framework (not necessary for Picasso)
-    compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:support-v4:23.2.1'
 
     // image loading library Picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
 
-    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
 
     // just a little view helper to makes things easier for us
     // not necessary for using Picasso

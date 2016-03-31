@@ -67,8 +67,11 @@ dependencies {
 
     compile 'com.squareup.okhttp:okhttp:2.7.5'
 
-    // if you want to use Picasso 2.5.2 with OkHttp3
+    // if you want to use Picasso 2.5.2 with Jake Wharton's OkHttp3 downloader
     compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2'
+
+    // if you want to use Picasso 2.5.2 with your own OkHttp3 downloader
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
 
     // just a little view helper to makes things easier for us
     // not necessary for using Picasso

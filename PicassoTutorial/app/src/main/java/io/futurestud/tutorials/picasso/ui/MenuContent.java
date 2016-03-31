@@ -38,18 +38,18 @@ public class MenuContent {
     public static Map<String, DummyItem> ITEM_MAP = new HashMap<>();
 
     static {
-        addItem( new DummyItem( "0", "Simple Image Loading", UsageExampleSimpleLoading.class ) );
+        addItem(new DummyItem("0", "Simple Image Loading", UsageExampleSimpleLoading.class));
         addItem(new DummyItem("1", "Adapter Use - ListView", UsageExampleListView.class));
-        addItem( new DummyItem( "2", "Adapter Use - GridView", UsageExampleGridViewAdapter.class ) );
-        addItem( new DummyItem( "3", "Placeholder, Error & Fading", UsageExamplePlaceholdersAndErrors.class ) );
-        addItem( new DummyItem( "4", "Image Resizing, Cropping and fit()", UsageExampleImageResizing.class ) );
-        addItem( new DummyItem( "5", "Picasso Priority", UsageExampleRequestPriority.class ) );
-        addItem( new DummyItem( "6", "Callbacks, RemoteViews & Notifications", UsageExampleTargetsAndRemoteViews.class ) );
-        addItem( new DummyItem( "7", "Rotation and Transformation", UsageExampleRotationTransformation.class ) );
-        addItem( new DummyItem( "8", "Influencing Image Caching", UsageExampleLoggingAndStats.class ) );
-        addItem( new DummyItem( "9", "Cache Indicators, Logging & Stats", UsageExampleLoggingAndStats.class ) );
-        addItem( new DummyItem( "10", "Picasso.Builder Basics", UsageExamplePicassoBuilderBasics.class ) );
-        addItem( new DummyItem( "11", "Custom Request Handlers", UsageExamplePicassoBuilderRequestHandler.class ) );
+        addItem(new DummyItem("2", "Adapter Use - GridView", UsageExampleGridViewAdapter.class));
+        addItem(new DummyItem("3", "Placeholder, Error & Fading", UsageExamplePlaceholdersAndErrors.class));
+        addItem(new DummyItem("4", "Image Resizing, Cropping and fit()", UsageExampleImageResizing.class));
+        addItem(new DummyItem("5", "Picasso Priority", UsageExampleRequestPriority.class));
+        addItem(new DummyItem("6", "Callbacks, RemoteViews & Notifications", UsageExampleTargetsAndRemoteViews.class));
+        addItem(new DummyItem("7", "Rotation and Transformation", UsageExampleRotationTransformation.class));
+        addItem(new DummyItem("8", "Influencing Image Caching", UsageExampleLoggingAndStats.class));
+        addItem(new DummyItem("9", "Cache Indicators, Logging & Stats", UsageExampleLoggingAndStats.class));
+        addItem(new DummyItem("10", "Picasso.Builder Basics", UsageExamplePicassoBuilderBasics.class));
+        addItem(new DummyItem("11", "Custom Request Handlers", UsageExamplePicassoBuilderRequestHandler.class));
         addItem(new DummyItem("12", "OkHttp3", OkHttp3Example.class));
 
         addItem(new DummyItem("13", "Bonus: Advanced ListView", UsageExampleAdvancedListView.class));

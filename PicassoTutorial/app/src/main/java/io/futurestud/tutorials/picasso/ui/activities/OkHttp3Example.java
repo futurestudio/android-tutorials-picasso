@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
+import com.jakewharton.picasso.OkHttp3Downloader;
 import com.squareup.picasso.Picasso;
 
 import butterknife.Bind;
@@ -31,9 +32,11 @@ public class OkHttp3Example extends AppCompatActivity {
     }
 
     private void loadImageWithJakeWhartonsOkHttp3Downloader() {
-        okhttp3.OkHttpClient client = new okhttp3.OkHttpClient();
+        okhttp3.OkHttpClient okHttp3Client = new okhttp3.OkHttpClient();
+        OkHttp3Downloader okHttp3Downloader = new OkHttp3Downloader(okHttp3Client);
+
         Picasso picasso = new Picasso.Builder(context)
-                .downloader(new CustomOkHttp3Downloader(client))
+                .downloader(okHttp3Downloader)
                 .build();
 
         // the url could be any image URL, which is accessible with a normal HTTP GET request

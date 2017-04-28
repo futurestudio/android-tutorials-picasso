@@ -12,15 +12,15 @@ import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.StatsSnapshot;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 
 public class UsageExampleLoggingAndStats extends AppCompatActivity {
 
-    @Bind(R.id.standard_list_imageview1) ImageView imageViewFromMemory;
-    @Bind(R.id.standard_list_imageview2) ImageView imageViewFromDisk;
-    @Bind(R.id.standard_list_imageview3) ImageView imageViewFromNetwork;
+    @BindView(R.id.standard_list_imageview1) ImageView imageViewFromMemory;
+    @BindView(R.id.standard_list_imageview2) ImageView imageViewFromDisk;
+    @BindView(R.id.standard_list_imageview3) ImageView imageViewFromNetwork;
 
     private Context context = this;
 

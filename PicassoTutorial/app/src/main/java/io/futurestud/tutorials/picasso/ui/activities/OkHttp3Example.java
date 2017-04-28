@@ -8,15 +8,15 @@ import android.widget.ImageView;
 import com.jakewharton.picasso.OkHttp3Downloader;
 import com.squareup.picasso.Picasso;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.okhttp.CustomOkHttp3Downloader;
 
 public class OkHttp3Example extends AppCompatActivity {
 
-    @Bind(R.id.standard_list_imageview1) ImageView imageView1;
-    @Bind(R.id.standard_list_imageview2) ImageView imageView2;
+    @BindView(R.id.standard_list_imageview1) ImageView imageView1;
+    @BindView(R.id.standard_list_imageview2) ImageView imageView2;
 
     private Context context = this;
 

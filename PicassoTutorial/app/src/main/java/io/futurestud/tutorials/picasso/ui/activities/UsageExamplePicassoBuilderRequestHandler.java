@@ -13,15 +13,15 @@ import com.squareup.picasso.RequestHandler;
 
 import java.io.IOException;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 
 public class UsageExamplePicassoBuilderRequestHandler extends AppCompatActivity {
 
-    @Bind(R.id.standard_list_imageview1) ImageView imageView1;
-    @Bind(R.id.standard_list_imageview2) ImageView imageView2;
-    @Bind(R.id.standard_list_imageview3) ImageView imageView3;
+    @BindView(R.id.standard_list_imageview1) ImageView imageView1;
+    @BindView(R.id.standard_list_imageview2) ImageView imageView2;
+    @BindView(R.id.standard_list_imageview3) ImageView imageView3;
 
     private Context context = this;
 

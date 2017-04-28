@@ -12,7 +12,7 @@ import com.squareup.picasso.Transformation;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.transformation.BlurTransformation;
@@ -22,11 +22,11 @@ import jp.wasabeef.picasso.transformations.CropCircleTransformation;
 
 public class UsageExampleRotationTransformation extends AppCompatActivity {
 
-    @Bind(R.id.standard_list_imageview1) ImageView imageViewSimpleRotate;
-    @Bind(R.id.standard_list_imageview2) ImageView imageViewComplexRotate;
-    @Bind(R.id.standard_list_imageview3) ImageView imageViewTransformationBlur;
-    @Bind(R.id.standard_list_imageview4) ImageView imageViewTransformationsMultiple;
-    @Bind(R.id.standard_list_imageview5) ImageView imageViewTransformationLibrary;
+    @BindView(R.id.standard_list_imageview1) ImageView imageViewSimpleRotate;
+    @BindView(R.id.standard_list_imageview2) ImageView imageViewComplexRotate;
+    @BindView(R.id.standard_list_imageview3) ImageView imageViewTransformationBlur;
+    @BindView(R.id.standard_list_imageview4) ImageView imageViewTransformationsMultiple;
+    @BindView(R.id.standard_list_imageview5) ImageView imageViewTransformationLibrary;
 
     private Context context = this;
 

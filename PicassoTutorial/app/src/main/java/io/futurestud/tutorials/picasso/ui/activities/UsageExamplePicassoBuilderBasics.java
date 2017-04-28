@@ -9,17 +9,17 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.picasso.OkHttpDownloader;
 import com.squareup.picasso.Picasso;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.futurestud.tutorials.picasso.R;
 import io.futurestud.tutorials.picasso.okhttp.UnsafeOkHttpClient;
 
 public class UsageExamplePicassoBuilderBasics extends AppCompatActivity {
 
-    @Bind(R.id.standard_list_imageview1) ImageView imageView1;
-    @Bind(R.id.standard_list_imageview2) ImageView imageView2;
-    @Bind(R.id.standard_list_imageview3) ImageView imageView3;
-    @Bind(R.id.standard_list_imageview4) ImageView imageView4;
+    @BindView(R.id.standard_list_imageview1) ImageView imageView1;
+    @BindView(R.id.standard_list_imageview2) ImageView imageView2;
+    @BindView(R.id.standard_list_imageview3) ImageView imageView3;
+    @BindView(R.id.standard_list_imageview4) ImageView imageView4;
 
     private Context context = this;
 

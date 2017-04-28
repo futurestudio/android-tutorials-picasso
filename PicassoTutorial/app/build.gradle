@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "io.futurestud.tutorials.picasso"
 
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 25
 
         versionCode 1
         versionName "1.0"
@@ -59,8 +59,8 @@ android {
 
 dependencies {
     // Android's support library for the framework (not necessary for Picasso)
-    compile 'com.android.support:appcompat-v7:23.2.1'
-    compile 'com.android.support:support-v4:23.2.1'
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support:support-v4:25.3.0'
 
     // image loading library Picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
@@ -71,7 +71,7 @@ dependencies {
     compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2'
 
     // if you want to use Picasso 2.5.2 with your own OkHttp3 downloader
-    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
 
     // major transformations library: base
     compile 'jp.wasabeef:picasso-transformations:2.1.0'
@@ -80,5 +80,6 @@ dependencies {
 
     // just a little view helper to makes things easier for us
     // not necessary for using Picasso
-    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 }

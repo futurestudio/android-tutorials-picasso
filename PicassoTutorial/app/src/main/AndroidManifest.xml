@@ -16,17 +16,19 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name">
-        </activity>
-
-        <activity
-            android:name=".ui.activities.UsageExampleSimpleLoading"
-            android:label="Simple Loading">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.activities.UsageExampleSimpleLoading"
+            android:label="Simple Loading">
+
         </activity>
 
         <activity
@@ -43,7 +45,8 @@
 
         <activity
             android:name=".ui.activities.UsageExampleImageResizing"
-            android:label="Image Manipulation"/>
+            android:label="Image Manipulation">
+        </activity>
 
         <activity
             android:name=".ui.activities.UsageExampleRequestPriority"

@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -15,16 +16,18 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".ui.activities.UsageExampleSimpleLoading"
+            android:label="Simple Loading">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".ui.activities.UsageExampleSimpleLoading"
-            android:label="Simple Loading"/>
 
         <activity
             android:name=".ui.activities.UsageExampleListView"
@@ -73,6 +76,7 @@
         <activity
             android:name=".ui.activities.OkHttp3Example"
             android:label="OkHttp3"/>
+        <activity android:name=".ui.activities.UsageExampleCatchErrors"/>
 
     </application>
 
